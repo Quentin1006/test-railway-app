@@ -19,7 +19,7 @@ app.get("/random", async (req, res) => {
 });
 
 app.get("/healthcheck", async (req, res) => {
-  res.send({ ok: process.env.HEALTCHECK });
+  res.send({ ok: process.env.HEALTHCHECK });
 });
 
 app.listen(port, () => {
