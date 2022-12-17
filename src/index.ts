@@ -18,6 +18,11 @@ app.get("/", async (req, res) => {
   res.send(`Hello, World! The time from the DB is ${rows[0].now}`);
 });
 
+app.get("/random", async (req, res) => {
+  const random = Math.random();
+  res.send({ random });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
