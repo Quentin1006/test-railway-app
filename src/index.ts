@@ -23,6 +23,10 @@ app.get("/random", async (req, res) => {
   res.send({ random });
 });
 
+app.get("/healthcheck", async (req, res) => {
+  res.send({ ok: true });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
